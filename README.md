@@ -1,5 +1,6 @@
 <img src="week-02/assets/logo-mega-rocket.png" alt="Logo MegaRocket">
-# Mega Rocket 
+
+# Mega Rocket
 Welcome to the Mega Rocket, a web application designed to help members and trainers of the gym manage their activities, schedule classes, and manage their membership. This web application is built using only HTML for the moment. We are going to implement CSS and JavaScript next.
 
 # Become a Software Professional 2023
@@ -9,6 +10,9 @@ First classes and setup of the tools needed. Figma project was built.
 
 ## Week 02
 Develop of the HTML and README files. CSS not used yet.
+
+## Week 03
+Develop of the style with CSS.
 
 
 ## Installation
