@@ -1,0 +1,23 @@
+header {
+    background-color : #373867;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 98px;
+}
+
+header img {
+    padding-top: 28px;
+    padding-left: 28px;
+}
+
+/*
+aside {
+    position: fixed;
+    top: 98px;
+    left: 0;
+    width: 313px;
+    height: 100%;
+    background-color: #AACE9B;
+  }
+*/
