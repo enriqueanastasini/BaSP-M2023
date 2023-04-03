@@ -9,6 +9,9 @@
         </title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -16,62 +19,68 @@
         </header>
         <aside>
             <nav>
-                <ul>
+                <ul class="list-aside">
                     <li>
-                        <button type="button">
-                            <img src="assets/imgs/home.png" alt="Home">
+                        <a href="#" class="btn-aside">
+                            <img src="assets/imgs/home.svg" alt="Home">
                             Home
-                        </button>
+                        </a>
                     </li>
                     <li>
-                        <button type="button">
-                            <img src="assets/imgs/sign-up.png" alt="Sign Up">
+                        <a href="#" class="btn-aside">
+                            <img src="assets/imgs/sign-up.svg" alt="Sign Up">
                             Sign Up
-                        </button>
+                        </a>
                     </li>
                     <li>
-                        <button type="button">
-                            <img src="assets/imgs/sign-in.png" alt="Sign In">
+                        <a href="#" class="btn-aside">
+                            <img src="assets/imgs/sign-in.svg" alt="Sign In">
                             Sign in
-                        </button>
+                        </a>
                     </li>
                 </ul>
             </nav>
             <div>
-                <h2>
+                <h2 class="contact-information">
                     Contact information
                 </h2>
-                <ul>
-                    <li>
-                        <a href="mailto:information@untitled.tld">
-                            <img src="assets/imgs/mail.png" alt="Mail">
+                <ul class="list-aside">
+                    <li class="list-aside-contact">
+                        <a href="mailto:information@untitled.tld" class="information-aside  mail-underline">
+                            <img src="assets/imgs/mail.svg" alt="Mail">
                             information@untitled.tld
                         </a>
                     </li>
-                    <li>
-                        <img src="assets/imgs/phone.png" alt="Contact">
-                        (000)000-0000
+                    <li class="list-aside-contact">
+                        <span class="information-aside"> <!--esta bien este span??-->
+                            <img src="assets/imgs/phone.svg" alt="Contact">
+                            (000)000-0000
+                        </span>
                     </li>
-                    <li>
-                        <img src="assets/imgs/home-ubi.png" alt="Location">
-                        1234 Somewhere Road #8254 Nashville, TN
+                    <li class="list-aside-contact">
+                        <span class="information-aside"> <!--esta bien este div??-->
+                            <img src="assets/imgs/ubication.svg" alt="Location">
+                            1234 Somewhere Road #8254 Nashville, TN
+                        </span>
                     </li>
                 </ul>
             </div>
         </aside>
-        <main>
+        <main class="main-pos">
             <section>
-                <h1>
-                    MEGA ROCKET WEB
-                </h1>
-                <span>
-                    WELCOME
-                </span>
-                <p>
-                    Mega Rocket web is a monthly management system for members and trainers
-                    so that they can dynamically sign up for their activities in the gym
-                </p>
-                <img src="assets/imgs/gym-main.png" alt="Gym Picture">
+                <div class="first-section-text">
+                    <h1>
+                        MEGA ROCKET WEB
+                    </h1>
+                    <span class="wel-subheader">
+                        WELCOME
+                    </span>
+                    <p class="intro-p">
+                        Mega Rocket web is a monthly management system for members and trainers
+                        so that they can dynamically sign up for their activities in the gym
+                    </p>
+                </div>
+                <img class="presentation-img" src="assets/imgs/gym-main.png" alt="Gym Picture">
             </section>
             <section>
                 <h2>
@@ -249,13 +258,13 @@
                             Free access to the fitness room
                         </td>
                         <td>
-                            <img src="assets/imgs/x-icon.png" alt="X Icon">
+                            <img src="assets/imgs/x.svg" alt="X Icon">
                         </td>
                         <td>
-                            <img src="assets/imgs/check-icon.png" alt="Check Icon">
+                            <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
                         <td>
-                            <img src="assets/imgs/check-icon.png" alt="Check Icon">
+                            <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
                     </tr>
                     <tr>
@@ -263,27 +272,13 @@
                             Free access to classes prior enrollment
                         </td>
                         <td>
-                            <img src="assets/imgs/check-icon.png" alt="Check Icon">
+                            <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
                         <td>
-                            <img src="assets/imgs/x-icon.png" alt="X Icon">
+                            <img src="assets/imgs/x.svg" alt="X Icon">
                         </td>
                         <td>
-                            <img src="assets/imgs/check-icon.png" alt="Check Icon">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Perzonalized follow-up by a trainer
-                        </td>
-                        <td>
-                            <img src="assets/imgs/x-icon.png" alt="X Icon">
-                        </td>
-                        <td>
-                            <img src="assets/imgs/check-icon.png" alt="Check Icon">
-                        </td>
-                        <td>
-                            <img src="assets/imgs/check-icon.png" alt="Check Icon">
+                            <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
                     </tr>
                     <tr>
@@ -291,13 +286,27 @@
                             Perzonalized follow-up by a trainer
                         </td>
                         <td>
-                            <img src="assets/imgs/check-icon.png" alt="Check Icon">
+                            <img src="assets/imgs/x.svg" alt="X Icon">
                         </td>
                         <td>
-                            <img src="assets/imgs/check-icon.png" alt="Check Icon">
+                            <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
                         <td>
-                            <img src="assets/imgs/check-icon.png" alt="Check Icon">
+                            <img src="assets/imgs/check.svg" alt="Check Icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Perzonalized follow-up by a trainer
+                        </td>
+                        <td>
+                            <img src="assets/imgs/check.svg" alt="Check Icon">
+                        </td>
+                        <td>
+                            <img src="assets/imgs/check.svg" alt="Check Icon">
+                        </td>
+                        <td>
+                            <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
                     </tr>
                     </tbody>
@@ -307,13 +316,13 @@
         <footer>
             <div>
                 <a href="https://www.linkedin.com/MegaRocket">
-                    <img src="assets/imgs/linkedin-footer.png" alt="LinkedIn logo">
+                    <img src="assets/imgs/linkedin.svg" alt="LinkedIn logo">
                 </a>
                 <a href="https://www.facebook.com/MegaRocket">
-                    <img src="assets/imgs/facebook-footer.png" alt="Facebook logo">
+                    <img src="assets/imgs/facebook.svg" alt="Facebook logo">
                 </a>
                 <a href="https://www.instagram.com/MegaRocket">
-                    <img src="assets/imgs/instagram-footer.png" alt="Instagram logo">
+                    <img src="assets/imgs/instagram.svg" alt="Instagram logo">
                 </a>
             </div>
             <span>
