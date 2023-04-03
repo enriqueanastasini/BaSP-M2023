@@ -1,26 +1,28 @@
+/* Header */
+
 header {
     background-color : #373867;
     position: fixed;
     top: 0;
-    width: 1512px;
-    /* width: 100%;*/
+    width: 1512px; /* width: 100%;*/
     height: 98px;
-    }
+}
 
 header img {
     padding-top: 28px;
     padding-left: 28px;
-    }
+}
+
+/* Sidebar */
 
 aside {
     position: fixed;
     top: 98px;
     left: 0;
     width: 313px;
-height: 982px; /*is it fine? verify*/
-    /*height: 100%;*/
+    height: 982px; /*is it fine? verify*/ /*height: 100%;*/
     background-color: #AACE9B;
-    }
+}
 
 .btn-aside {
     background: #FFFFFF;
@@ -36,22 +38,21 @@ height: 982px; /*is it fine? verify*/
     margin-top: 17px;
     width: 263px;
     height: 38px;
-    /*display: block;*/
-    display: inline-block;
+    display: inline-block;/*display: block;*/
     padding-top: 11px;
-    }
+}
 
 .btn-aside img {
     margin-right: 10px;
     margin-left: 79px;
     height: 19px;
     width: 19px;
-    }
+}
 
 .list-aside {
     list-style: none;
     margin-left: 0;
-    }
+}
 
 .contact-information {
     font-family: 'Roboto';
@@ -66,8 +67,7 @@ height: 982px; /*is it fine? verify*/
 }
 
 .list-aside-contact {
-   
-    padding-bottom: 23px;
+   padding-bottom: 23px;
 }
 
 .information-aside {
@@ -75,28 +75,30 @@ height: 982px; /*is it fine? verify*/
     font-size: 20px;
     color: #373867;
     text-decoration: none;
-   
-    }
+}
 
 .information-aside img {
     margin-right: 17px;
     height: 15px;
     width: 15px;
     margin-left: 34px;
-    
-    }
+}
 
 
 .mail-underline {
     text-decoration: underline;
-    }
-
-.main-pos {
-margin-top: 163px;
-margin-left: 313px;
 }
 
-.main-pos h1{
+/* Main*/
+
+.main-pos {
+    margin-top: 163px;
+    margin-left: 313px;
+}
+
+/* Section 1*/
+
+.main-pos h1 {
     font-family: 'Roboto';
     font-size: 40px;
     color: #373867;
@@ -106,13 +108,13 @@ margin-left: 313px;
     margin-left: 135px;
 }
 
-.wel-subheader{
+.wel-subheader {
     margin-left:255px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-color: #49A37B;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #49A37B;
 }
 
 .intro-p {
@@ -120,19 +122,81 @@ color: #49A37B;
     margin-top: 34px;
     width: 488px;
     font-family: 'Roboto';
-font-size: 20px;
-text-align: center;
-color: #373867;
+    font-size: 20px;
+    text-align: center;
+    color: #373867;
 }
 
 .first-section-text {
-    float: left;
+    display: inline-block; /*float: left;*/
+    vertical-align: top;
 }
 
 .presentation-img {
     width: 500px;
     margin-left: 61px;
-    
+}
 
+/*Section 2 */
+
+.features {
+    display: inline-block;
+    margin-top: 65px;
+    margin-left: 112px;
+    height: 469px;
+    width: 959px; /*no sabia si usarlo pero me sirve para darle limite al costado derecho*/
+}
+
+.features h2 {
+    margin-left: 420px;
+    margin-bottom: 53px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    color: #373867;
+    text-decoration-line: underline;
+    text-decoration-color: #49A37B;
+    text-decoration-thickness: 3px;
+}
+
+.features h3 {
+font-family: 'Roboto';
+font-weight: bold;
+font-size: 24px;
+color: #373867;
+}
+
+.features img {
+    height: 38px;
+    width: 43px;
+}
+
+.feature-article {
+    display: inline-block;
+    width: 477px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #373867;
+    /*margin-left: 15px;*/
+}
+
+.feature-article h3 {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 24px;
+    color: #373867;
+    width: 300px;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+
+}
+
+.feature-article p {
+    margin-left: 58px;
+    margin-top: 29px;
+    width: 355px;
+    margin-bottom: 24px;
 }
 
