@@ -1,3 +1,10 @@
+/* Body */
+
+body {
+    font-family: 'Be Vietnan Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Header */
 
 header {
@@ -20,7 +27,7 @@ aside {
     top: 98px;
     left: 0;
     width: 313px;
-    height: 982px; /*is it fine? verify*/ /*height: 100%;*/
+    height: 982px; /*height: 100%;*/
     background-color: #AACE9B;
 }
 
@@ -68,37 +75,34 @@ aside {
 
 .list-aside-contact {
    padding-bottom: 23px;
-}
-
-.information-aside {
-    font-family: 'Roboto';
+   font-family: 'Roboto';
     font-size: 20px;
-    color: #373867;
     text-decoration: none;
+    color: #373867;
 }
 
-.information-aside img {
+.list-aside-contact img {
     margin-right: 17px;
     height: 15px;
     width: 15px;
     margin-left: 34px;
-}
-
+ }
 
 .mail-underline {
     text-decoration: underline;
+    color: #373867;
 }
 
 /* Main*/
 
-.main-pos {
+.main-pos { /* this could be done without a class */
     margin-top: 163px;
     margin-left: 313px;
 }
 
-/* Section 1*/
+/* Welcome */
 
-.main-pos h1 {
+.welcome-section h1 {
     font-family: 'Roboto';
     font-size: 40px;
     color: #373867;
@@ -137,18 +141,19 @@ aside {
     margin-left: 61px;
 }
 
-/*Section 2 */
+/*Features */
 
-.features {
+.features-section {
     display: inline-block;
     margin-top: 65px;
     margin-left: 112px;
+    margin-bottom: 41px;
     height: 469px;
     width: 959px; /*no sabia si usarlo pero me sirve para darle limite al costado derecho*/
 }
 
-.features h2 {
-    margin-left: 420px;
+.features-section h2 {
+    text-align: center;
     margin-bottom: 53px;
     font-family: 'Roboto';
     font-weight: bold;
@@ -159,14 +164,14 @@ aside {
     text-decoration-thickness: 3px;
 }
 
-.features h3 {
-font-family: 'Roboto';
-font-weight: bold;
-font-size: 24px;
-color: #373867;
+.features-section h3 {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 24px;
+    color: #373867;
 }
 
-.features img {
+.features-section img {
     height: 38px;
     width: 43px;
 }
@@ -200,3 +205,258 @@ color: #373867;
     margin-bottom: 24px;
 }
 
+/* About Mega Rockets */
+
+.about-section {
+    height: 610px;
+    width: 1026;
+    margin-left: 87px;
+}
+
+.about-section h2 {
+    margin-bottom: 51px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    color: #373867;
+    text-decoration-line: underline;
+    text-decoration-color: #49A37B;
+    text-decoration-thickness: 3px;
+    text-align: center;
+    width: 1026px;
+}
+
+.about-first img {
+    width: 453px;
+    height: 248px;
+    margin-right: 19px;
+    margin-bottom: 24px;
+}
+
+.about-first p {
+    display: inline-block;
+    width: 558px;
+    vertical-align: top;
+    text-align: right;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 23px;
+    color: #373867;
+    margin-top: 37px;
+}
+
+.about-second img {
+    width: 453px;
+    height: 248px;
+    margin-right: 19px;
+    margin-bottom: 24px;
+}
+
+.about-second p {
+    display: inline-block;
+    width: 558px;
+    vertical-align: top;
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 23px;
+    color: #373867;
+    margin-top: 37px;
+}
+
+/* Get in touch */
+
+.get-touch-section {
+    width: 900px;
+    height: 387px;
+    margin-left: 150px;
+    margin-top: 41px;
+}
+
+.get-touch-section h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    color: #373867;
+    text-decoration-line: underline;
+    text-decoration-color: #49A37B;
+    text-decoration-thickness: 3px;
+}
+
+.get-touch-section label {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 14px;
+    color: #373867;
+    display: block;
+    margin-bottom: 7px;
+
+}
+
+.left-get {
+    display: inline-block;
+    width: 334px;
+}
+
+.personal-data-input {
+    height: 37px;
+    width: 260px;
+    border: 1px solid #373867;
+    border-radius: 5px;
+    margin-bottom: 23px;
+}
+
+.submit-input {
+    width: 123px;
+    height: 47px;
+    background: #AACE9B;
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: #373867;
+}
+
+.right-get {
+display: inline-block;
+vertical-align: top;
+}
+
+.right-get select {
+    width: 562px;
+    height: 37px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    margin-bottom: 23px;
+}
+
+.right-get textarea {
+    width: 550px;
+    height: 191px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+
+.get-touch-section ::placeholder {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #373867;
+    opacity: 0.5;
+}
+
+/* Activities */
+
+.activities-section {
+    width: 934px;
+    height: 346px;
+    margin-top: 65px;
+    margin-left: 133px;
+}
+
+.activities-section h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    color: #373867;
+    text-decoration-line: underline;
+    text-decoration-color: #49A37B;
+    text-decoration-thickness: 3px;
+}
+
+.activities-section ul {
+    list-style: disc;
+    display: inline-block;
+    margin-top: 22px;
+    color: #373867;
+    font-weight: bold;
+    font-size: 24px;
+    width: 290px;
+    vertical-align: top;
+}
+
+.activities-section ul li {
+    margin-bottom: 14px;
+}
+
+.activities-section img {
+    width: 636px;
+    height: 245px;
+}
+
+/* Membership */
+
+.membership-section {
+    width: 982px;
+    height: 394px;
+    margin-left: 109px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.membership-section h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 30px;
+    color: #373867;
+    text-decoration-line: underline;
+    text-decoration-color: #49A37B;
+    text-decoration-thickness: 3px;
+}
+
+.membership-table {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: #373867;
+}
+
+.column-first {
+    width: 381px;
+    height: 58px;
+    vertical-align: middle;
+}
+
+.column-rest {
+    width: 200px;
+    height: 58px;
+    vertical-align: middle;
+}
+
+.row-grey {
+    background-color: #D9D9D9;
+}
+
+.row-white {
+    background-color: #FFFFFF;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    width: 1200px;
+    height: 72px;
+    margin-left: 313px;
+    padding-top: 8px;
+    background-color: #AACE9B;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+footer a {
+    margin-right: 16px;
+    text-decoration: none;
+}

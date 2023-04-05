@@ -46,35 +46,31 @@
                 </h2>
                 <ul class="list-aside">
                     <li class="list-aside-contact">
-                        <a href="mailto:information@untitled.tld" class="information-aside  mail-underline">
+                        <a href="mailto:information@untitled.tld" class="mail-underline">
                             <img src="assets/imgs/mail.svg" alt="Mail">
                             information@untitled.tld
                         </a>
                     </li>
                     <li class="list-aside-contact">
-                        <span class="information-aside"> <!--esta bien este span??-->
                             <img src="assets/imgs/phone.svg" alt="Contact">
                             (000)000-0000
-                        </span>
                     </li>
                     <li class="list-aside-contact">
-                        <span class="information-aside"> <!--esta bien este div??-->
                             <img src="assets/imgs/ubication.svg" alt="Location">
                             1234 Somewhere Road #8254 Nashville, TN
-                        </span>
                     </li>
                 </ul>
             </div>
         </aside>
         <main class="main-pos">
-            <section>
+            <section class="welcome-section">
                 <div class="first-section-text">
                     <h1>
                         MEGA ROCKET WEB
                     </h1>
-                    <span class="wel-subheader">
+                    <h2 class="wel-subheader">
                         WELCOME
-                    </span>
+                    </h2>
                     <p class="intro-p">
                         Mega Rocket web is a monthly management system for members and trainers
                         so that they can dynamically sign up for their activities in the gym
@@ -82,7 +78,7 @@
                 </div>
                 <img class="presentation-img" src="assets/imgs/gym-main.png" alt="Gym Picture">
             </section>
-            <section class="features">
+            <section class="features-section">
                 <h2>
                     Features
                 </h2>
@@ -127,11 +123,11 @@
                     </p>
                 </div>
             </section>
-            <section>
+            <section class="about-section">
                 <h2>
                     About Mega Rockets
                 </h2>
-                <div>
+                <div class="about-first">
                     <img src="assets/imgs/gym-1-about.png" alt="Gym Picture">
                     <p>
                     Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
@@ -142,8 +138,7 @@
                     Sed nulla amet lorem feugiat tempus aliquam.
                     </p>
                 <div>
-                <div>
-                    <img src="assets/imgs/gym-2-about.png" alt="Gym Picture">
+                <div class="about-second">
                     <p>
                     Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
                     Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
@@ -152,61 +147,55 @@
                     Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum.
                     Sed nulla amet lorem feugiat tempus aliquam.
                     </p>
+                    <img src="assets/imgs/gym-2-about.png" alt="Gym Picture">
                 <div>
             </section>
-            <section>
+            <section class="get-touch-section">
                 <h2>
                     Get in touch
                 </h2>
-                <form action="form_submit.php" method="post">
-                    <div>
-                        <label for="FirstName">
-                            First name
-                        </label>
-                        <input type="text" id="FirstName" name="FirstName" placeholder="Enter name">
-                    </div>
-                    <div>
-                        <label for="LastName">
-                            Last name
-                        </label>
-                        <input type="text" id="LastName" name="LastName" placeholder="Enter last name">
-                    </div>
-                    <div>
-                        <label for="Email">
-                            Email adress
-                        </label>
-                        <input type="text" id="Email" name="Email" placeholder="Enter email">
-                    </div>
-                    <div>
-                        <label for="Contact">
-                            Contact reason
-                        </label>
-                        <select id="Contact" name="Contact">
-                            <option value="" disabled selected hidden>
-                                Choose contact reason
-                            </option>
-                            <option value="reason1">
-                                reason 1
-                            </option>
-                            <option value="reason2">
-                                reason 2
-                            </option>
-                            <option value="reason3">
-                                reason 3
-                            </option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="Message">
-                            Message
-                        </label>
-                        <textarea name="description" id="Message" name="Message">
-                        </textarea>
-                    </div>
-                    <input type="submit" value="Submit">
-                </form>
+                    <form action="form_submit.php" method="post">
+                        <div class="left-get">
+                                <label for="FirstName">
+                                    First name
+                                </label>
+                                <input class="personal-data-input" type="text" id="FirstName" name="FirstName" placeholder="Enter name">
+                                <label for="LastName">
+                                    Last name
+                                </label>
+                                <input class="personal-data-input" type="text" id="LastName" name="LastName" placeholder="Enter last name">
+                                <label for="Email">
+                                    Email adress
+                                </label>
+                                <input class="personal-data-input" type="text" id="Email" name="Email" placeholder="Enter email">
+                            <input class="submit-input" type="submit" value="Submit">
+                        </div>
+                        <div class="right-get">
+                                <label for="Contact">
+                                    Contact reason
+                                </label>
+                                <select id="Contact" name="Contact">
+                                    <option value="" disabled selected hidden>
+                                        Choose contact reason
+                                    </option>
+                                    <option value="reason1">
+                                        reason 1
+                                    </option>
+                                    <option value="reason2">
+                                        reason 2
+                                    </option>
+                                    <option value="reason3">
+                                        reason 3
+                                    </option>
+                                </select>
+                                <label for="Message">
+                                    Message
+                                </label>
+                                <textarea placeholder="Enter you message" name="description" id="Message" name="Message"></textarea>
+                        </div>
+                    </form>
             </section>
-            <section>
+            <section class="activities-section">
                 <h2>
                     Gym activities
                 </h2>
@@ -231,81 +220,81 @@
                     <img src="assets/imgs/gym-activities.png" alt="Gym Picture">
                 </div>
             </section>
-            <section>
+            <section class="membership-section">
                 <h2>
                     Memberships
                 </h2>
-                <table>
+                <table class="membership-table">
                     <thead>
-                    <tr>
-                        <th>
+                    <tr class="row-grey">
+                        <th class="column-first">
 
                         </th>
-                        <th>
+                        <th class="column-rest">
                             Only classes
                         </th>
-                        <th>
+                        <th class="column-rest">
                             Classics
                         </th>
-                        <th>
+                        <th class="column-rest">
                             Black
                         </th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>
+                    <tr class="row-white">
+                        <td class="column-first">
                             Free access to the fitness room
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/x.svg" alt="X Icon">
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
                     </tr>
-                    <tr>
-                        <td>
+                    <tr class="row-grey">
+                        <td class="column-first">
                             Free access to classes prior enrollment
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/x.svg" alt="X Icon">
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
                     </tr>
-                    <tr>
-                        <td>
+                    <tr class="row-white">
+                        <td class="column-first">
                             Perzonalized follow-up by a trainer
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/x.svg" alt="X Icon">
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            Perzonalized follow-up by a trainer
+                    <tr class="row-grey">
+                        <td class="column-first">
+                            Schedulling visualization
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
-                        <td>
+                        <td class="column-rest">
                             <img src="assets/imgs/check.svg" alt="Check Icon">
                         </td>
                     </tr>
