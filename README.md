@@ -12,7 +12,10 @@ First classes and setup of the tools needed. Figma project was built.
 Develop of the HTML and README files. CSS not used yet.
 
 ## Week 03
-Develop of the style with CSS.
+Develop of the style with CSS in Pixel Perfect.
+
+## Week 04
+Develop the style with CSS. Responsive using breakpoints, flexible layout. Mobile First.
 
 
 ## Installation

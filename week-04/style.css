@@ -1,0 +1,8 @@
+* {
+    font-family: 'Roboto';
+    
+}
+
+.general-container {
+    display: flex;
+}
