@@ -72,6 +72,7 @@
                 </ul>
             </div>
         </aside>
+        <div class="content-container">
         <main class="main-pos">
             <section class="welcome-section">
                 <div class="first-section-text">
@@ -92,45 +93,49 @@
                 <h2>
                     Features
                 </h2>
-                <div class="feature-article">
-                    <img src="assets/imgs/features-1.png" alt="Reservations">
-                    <h3>
-                        Shift Reservations
-                    </h3>
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
-                </div>
-                <div class="feature-article">
-                    <img src="assets/imgs/features-2.png" alt="Schedule">
-                    <h3>
-                        Scheduling & Opening hours
-                    </h3>
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
-                </div>
-                <div class="feature-article">
-                    <img src="assets/imgs/features-3.png" alt="Membership">
-                    <h3>
-                        Membership management
-                    </h3>
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
-                </div>
-                <div class="feature-article">
-                    <img src="assets/imgs/features-4.png" alt="Contact">
-                    <h3>
-                        Contact form & suggestions
-                    </h3>
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
+                <div class="top-feature-article">
+                    <div class="feature-article">
+                        <img src="assets/imgs/features-1.png" alt="Reservations">
+                        <h3>
+                            Shift Reservations
+                        </h3>
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+                    <div class="feature-article">
+                        <img src="assets/imgs/features-2.png" alt="Schedule">
+                        <h3>
+                            Scheduling & Opening hours
+                        </h3>
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+                </div>    
+                <div class="bottom-feature-article">    
+                    <div class="feature-article">
+                        <img src="assets/imgs/features-3.png" alt="Membership">
+                        <h3>
+                            Membership management
+                        </h3>
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+                    <div class="feature-article">
+                        <img src="assets/imgs/features-4.png" alt="Contact">
+                        <h3>
+                            Contact form & suggestions
+                        </h3>
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
                 </div>
             </section>
             <section class="about-section">
@@ -148,10 +153,10 @@
                         interdum.
                         Sed nulla amet lorem feugiat tempus aliquam.
                     </p>
-                    <!-- <button> este button deberia ir o lo sacamos? sino usamos media y display:none;
-                        Learn More
-                    </button> -->
                 </div>
+                <button class="btn-about">
+                    Learn More
+                </button>
                 <div class="about-second">
                     <p>
                         Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
@@ -163,17 +168,17 @@
                         Sed nulla amet lorem feugiat tempus aliquam.
                     </p>
                     <img src="assets/imgs/gym-2-about.png" alt="Gym Picture">
-                    <!-- <button> este button deberia ir o lo sacamos? sino usamos media y display:none;
-                    Learn More
-                    </button> -->
                 </div>
+                <button class="btn-about">
+                    Learn More
+                </button>
             </section>
             <section class="get-touch-section">
                 <h2>
                     Get in touch
                 </h2>
                 <form action="form_submit.php" method="post">
-                    <!-- <div class="left-get"> -->
+                    <div class="left-get">
                         <label for="FirstName">
                             First name
                         </label>
@@ -189,9 +194,9 @@
                         </label>
                         <input class="personal-data-input" type="text" id="Email" name="Email"
                             placeholder="Enter email">
-                        <input class="submit-input" type="submit" value="Submit">
-                    <!-- </div> -->
-<!--                     <div class="right-get"> -->
+                        <input class="submit-input-desktop" type="submit" value="Submit">
+                    </div>
+                    <div class="right-get">
                         <label for="Contact">
                             Contact reason
                         </label>
@@ -213,15 +218,17 @@
                             Message
                         </label>
                         <textarea placeholder="Enter you message" name="description" id="Message"
-                            name="Message"></textarea>
-                    <!-- </div> -->
+                            name="Message">
+                        </textarea>
+                        <input class="submit-input-mob" type="submit" value="Submit">
+                    </div>
                 </form>
             </section>
             <section class="activities-section">
                 <h2>
                     Gym activities
                 </h2>
-                <div>
+                <div class="activities-info">
                     <ul>
                         <div class="activities-list-first">
                             <li>
@@ -345,6 +352,7 @@
             Copyright © 2022 Radium Rocket. All rights reserved.
         </span>
     </footer>
+    </div>
 </body>
 
 </html>
