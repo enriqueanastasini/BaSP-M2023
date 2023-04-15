@@ -34,14 +34,10 @@ console.log(primerEspacio);
 
 var textoF = "lorem ipsum";
 var primerEspacioF = textoF.indexOf(" ");
-
 var primerPalabra = textoF.substring(0, primerEspacioF).toLowerCase();
 var segundaPalabra = textoF.substring(primerEspacioF + 1).toLowerCase();
-
 var primerPalabraMayusc = primerPalabra.substring(0, 1).toUpperCase() + primerPalabra.substring(1);
 var segundaPalabraMayusc = segundaPalabra.substring(0, 1).toUpperCase() + segundaPalabra.substring(1);
-
 var final = primerPalabraMayusc + " " + segundaPalabraMayusc;
-
 console.log(final);
 
