@@ -1,43 +1,46 @@
-/* Ejercicio a) */
+console.log("Excercise 02");
 
-var textoA = "lorem ipsum dolor sit amet";
-var textoMayuscula = textoA.toUpperCase();
-console.log(textoMayuscula);
+/* Excercise a) */
 
-/* Ejercicio b) */
+var textA = "lorem ipsum dolor sit amet";
+var textUp = textA.toUpperCase();
+console.log("Answer of Ex a) " + textUp);
 
-var textoB = "lorem ipsum dolor sit amet";
-var textoB5 = textoB.substring(0, 5);
-console.log(textoB5);
+/* Excercise b) */
 
-/* Ejercicio c) */
+var textB = "lorem ipsum dolor sit amet";
+var textB5 = textB.substring(0, 5);
+console.log("Answer of Ex b) " + textB5);
 
-var textoC = "lorem ipsum dolor sit amet";
-var toC = textoC.substring(textoC.length - 3);
-console.log(toC);
+/* Excercise c) */
 
-/* Ejercicio d) */
+var textC = "lorem ipsum dolor sit amet";
+var extC = textC.substring(textC.length - 3);
+console.log("Answer of Ex c) " + extC);
 
-var textoD = "lorem ipsum dolor sit amet";
-var primerLetra = textoD.substring(0, 1).toUpperCase();
-var restoDeLetras = textoD.substring(1).toLowerCase();
-var textoDFinal = primerLetra + restoDeLetras;
-console.log(textoDFinal);
+/* Excercise d) */
 
-/* Ejercicio e) */
+var textD = "lorem ipsum dolor sit amet";
+var firstLetter = textD.substring(0, 1).toUpperCase();
+var restLetters = textD.substring(1).toLowerCase();
+var textDFinal = firstLetter + restLetters;
+console.log("Answer of Ex d) " + textDFinal);
 
-var textoE = "lorem ipsum dolor sit amet";
-var primerEspacio = textoE.indexOf(" ");
-console.log(primerEspacio);
+/* Excercise e) */
 
-/* Ejercicio f) */
+var textE = "lorem ipsum dolor sit amet";
+var firstSpace = textE.indexOf(" ");
+console.log("Answer of Ex e) " + firstSpace);
 
-var textoF = "lorem ipsum";
-var primerEspacioF = textoF.indexOf(" ");
-var primerPalabra = textoF.substring(0, primerEspacioF).toLowerCase();
-var segundaPalabra = textoF.substring(primerEspacioF + 1).toLowerCase();
-var primerPalabraMayusc = primerPalabra.substring(0, 1).toUpperCase() + primerPalabra.substring(1);
-var segundaPalabraMayusc = segundaPalabra.substring(0, 1).toUpperCase() + segundaPalabra.substring(1);
-var final = primerPalabraMayusc + " " + segundaPalabraMayusc;
-console.log(final);
+/* Excercise f) */
 
+var textF = "lorem ipsum";
+var firstSpaceF = textF.indexOf(" ");
+var firstWord = textF.substring(0, firstSpaceF).toLowerCase();
+var secondWord = textF.substring(firstSpaceF + 1).toLowerCase();
+var firstWordMayusc = firstWord.substring(0, 1).toUpperCase() + firstWord.substring(1);
+var secondWordMayusc = secondWord.substring(0, 1).toUpperCase() + secondWord.substring(1);
+var final = firstWordMayusc + " " + secondWordMayusc;
+console.log("Answer of Ex f) " + final);
+
+console.log(" ");

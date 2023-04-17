@@ -1,43 +1,138 @@
-/* Ejercicio a) */
+console.log("Excercise 03");
 
-var mesesA = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-console.log(mesesA[4]);
-console.log(mesesA[10]);
+/* Excercise a) */
 
-/* Ejercicio b) */
+var monthsA = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+console.log("Answer of Ex a) " + monthsA[4]);
+console.log("Answer of Ex a) " + monthsA[10]);
 
-var mesesB = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-mesesB.sort();
-console.log(mesesB);
+/* Excercise b) */
 
-/* Ejercicio c) */
+var monthsB = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+monthsB.sort();
+console.log("Answer of Ex b) " + monthsB);
 
-var mesesC = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-mesesC.unshift("MesInicio");
-mesesC.push("MesFinal");
-console.log(mesesC);
+/* Excercise c) */
 
-/* Ejercicio d) */
+var monthsC = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+monthsC.unshift("MonthFirst");
+monthsC.push("MonthEnd");
+console.log("Answer of Ex c) " + monthsC);
 
-var mesesD = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-mesesD.shift();
-mesesD.pop();
-console.log(mesesD);
+/* Excercise d) */
 
-/* Ejercicio e) */
+var monthsD = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+monthsD.shift();
+monthsD.pop();
+console.log("Answer of Ex d) " + monthsD);
 
-var mesesE = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-mesesE.reverse();
-console.log(mesesE);
+/* Excercise e) */
 
-/* Ejercicio f) */
+var monthsE = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+monthsE.reverse();
+console.log("Answer of Ex e) " + monthsE);
 
-var mesesF = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-var todosMeses = mesesF.join('-');
-console.log(todosMeses);
+/* Excercise f) */
 
-/* Ejercicio g) */
+var monthsF = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+var allMonths = monthsF.join("-");
+console.log("Answer of Ex f) " + allMonths);
 
-var mesesG = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-var copiaMayoNoviembre = mesesG.slice(4, 11);
-console.log(copiaMayoNoviembre);
+/* Excercise g) */
+
+var monthsG = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+var copyMayoNoviembre = monthsG.slice(4, 11);
+console.log("Answer of Ex g) " + copyMayoNoviembre);
+
+console.log(" ");

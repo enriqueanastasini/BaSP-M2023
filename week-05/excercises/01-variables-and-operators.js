@@ -1,21 +1,23 @@
-/* Ejercicio a) */
+console.log("Excercise 01");
+
+/* Excercise a) */
 var a = 5;
 var b = 7;
 var c = a + b;
-console.log(c);
+console.log("Answer of Ex a) " + c);
 
+/* Excercise b) */
 
-/* Ejercicio b) */
+var firstName = "Enrique";
+var lastName = "Anastasini";
+var firstNameLastName = firstName + " " + lastName;
+console.log("Answer of Ex b) " + firstNameLastName);
 
-var nombre = "Enrique";
-var apellido = "Anastasini";
-var nombreApellido = nombre + " " + apellido;
-console.log(nombreApellido);
+/* Excercise c) */
 
-/* Ejercicio c) */
+var firstWord = "Radium";
+var secondWord = "Rocket";
+var addWords = firstWord.length + secondWord.length;
+console.log("Answer of Ex c) " + addWords);
 
-var palabra1 = "Radium";
-var palabra2 = "Rocket";
-var sumaPalabras = palabra1.length + palabra2.length;
-console.log(sumaPalabras);
-
+console.log(" ");

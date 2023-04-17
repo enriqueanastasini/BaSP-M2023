@@ -1,33 +1,38 @@
-/* Ejercicio a) */
+console.log("Excercise 05");
+console.log("ALERTS a) b) c)");
 
-var palabrasA = ["lorem", "ipsum", "dolor", "sit", "amet"];
-for (var i = 0; i < palabrasA.length; i++) {
-  alert(palabrasA[i]);
+/* Excercise a) */
+
+var wordsA = ["lorem", "ipsum", "dolor", "sit", "amet"];
+for (var i = 0; i < wordsA.length; i++) {
+  alert(wordsA[i]);
 }
 
-/* Ejercicio b) */
+/* Excercise b) */
 
-var palabrasB = ["lorem", "ipsum", "dolor", "sit", "amet"];
+var wordsB = ["lorem", "ipsum", "dolor", "sit", "amet"];
 
-for (var i = 0; i < palabrasB.length; i++) {
-  var palabraModificada = palabrasB[i][0].toUpperCase() + palabrasB[i].substring(1);
-  alert(palabraModificada);
+for (var i = 0; i < wordsB.length; i++) {
+  var wordModified = wordsB[i][0].toUpperCase() + wordsB[i].substring(1);
+  alert(wordModified);
 }
 
-/* Ejercicio c) */
+/* Excercise c) */
 
 var sentence = "";
-var palabrasC = ["lorem", "ipsum", "dolor", "sit", "amet"];
+var wordsC = ["lorem", "ipsum", "dolor", "sit", "amet"];
 
-for (let i = 0; i < palabrasC.length; i++) {
-  sentence = sentence + palabrasC[i];
+for (let i = 0; i < wordsC.length; i++) {
+  sentence = sentence + wordsC[i];
 }
 alert(sentence);
 
-/* Ejercicio d) */
+/* Excercise d) */
 
-var arrayVacio = [];
+var arrayEmpty = [];
 for (var i = 0; i < 10; i++) {
-  arrayVacio.push(i);
+  arrayEmpty.push(i);
 }
-console.log(arrayVacio);
+console.log("Answer of Ex d) " + arrayEmpty);
+
+console.log(" ");

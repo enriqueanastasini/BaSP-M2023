@@ -1,13 +1,16 @@
-/* Ejercicio a) */
+console.log("Excercise 04");
+console.log("ALERTS");
 
-var numeroAleatorio = Math.random();
-if (numeroAleatorio >= 0.5) {
+/* Excercise a) */
+
+var numRandom = Math.random();
+if (numRandom >= 0.5) {
   alert("Greater than or equal to 0.5");
 } else {
   alert("Lower than 0.5");
 }
 
-/* Ejercicio b) */
+/* Excercise b) */
 
 var age = Math.floor(Math.random() * 101);
 if (age < 2) {
@@ -25,3 +28,5 @@ if (age < 2) {
 } else {
   alert("Anciano");
 }
+
+console.log(" ");
