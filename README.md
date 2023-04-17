@@ -17,6 +17,9 @@ Develop of the style with CSS in Pixel Perfect.
 ## Week 04
 Develop the style with CSS. Responsive using breakpoints, flexible layout. Mobile First.
 
+## Week 05
+Practicing JavaScript ES5. Including exercises of: (Variables and operators - Strings - Arrays - If-Else - For - Functions).
+
 
 ## Installation
 To use the Mega Rocket, simply open the index.html file in your web browser. There is no need to install any software or libraries.
