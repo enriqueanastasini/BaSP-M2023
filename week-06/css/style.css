@@ -1,0 +1,19 @@
+* {
+    font-family: 'Roboto';
+}
+
+@media (min-width: 1024px){
+        header {
+        background-color : #373867;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 98px;
+    }
+
+    .burguer-menu{
+        visibility: hidden;
+    }
+   }
+
+
