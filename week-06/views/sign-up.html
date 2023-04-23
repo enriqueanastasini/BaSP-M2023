@@ -27,7 +27,11 @@
         src="../../assets/imgs/logo-mega-rocket.png"
         alt="Logo MegaRocket"
       />
-      <img class="burguer-menu" src="../../assets/imgs/burguer.svg" alt="Menu" />
+      <img
+        class="burguer-menu"
+        src="../../assets/imgs/burguer.svg"
+        alt="Menu"
+      />
     </header>
     <div class="general-container">
       <aside>
@@ -75,77 +79,133 @@
       </aside>
       <div class="content-container">
         <main class="main-pos">
-          <section class="get-touch-section">
-            <h2>Get in touch</h2>
+          <section class="sign-up-section">
+            <h2>Sign Up</h2>
             <form action="form_submit.php" method="post">
-              <div class="left-get">
-                <label for="first-name"> First name </label>
+              <div class="sign-up-inputs">
+                <div class="sign-up-left">
+                  <label for="sign-up-name"> Name </label>
+                  <input
+                    id="sign-up-name"
+                    class="personal-data-input"
+                    placeholder="Enter Name"
+                    type="text"
+                  />
+                  <span class="input-error-message hidden"></span>
+
+                  <label for="sign-up-dni"> DNI </label>
+                  <input
+                    id="sign-up-dni"
+                    class="personal-data-input"
+                    placeholder="Enter DNI"
+                    type="text"
+                  />
+                  <span class="input-error-message hidden"></span>
+
+                  <label for="sign-up-phone"> Phone </label>
+                  <input
+                    id="sign-up-phone"
+                    class="personal-data-input"
+                    placeholder="Enter phone number"
+                    type="text"
+                  />
+                  <span class="input-error-message hidden"></span>
+
+                  <label for="sign-up-city"> City </label>
+                  <input
+                    id="sign-up-city"
+                    class="personal-data-input"
+                    placeholder="Enter city"
+                    type="text"
+                  />
+                  <span class="input-error-message hidden"></span>
+
+                  <label for="sign-up-email"> Email </label>
+                  <input
+                    id="sign-up-email"
+                    class="personal-data-input"
+                    placeholder="Enter email"
+                    type="text"
+                  />
+                  <span class="input-error-message hidden"></span>
+
+                  <label for="sign-up-pass"> Password </label>
+                  <input
+                    id="sign-up-pass"
+                    class="personal-data-input"
+                    placeholder="Enter password"
+                    type="password"
+                  />
+                  <span class="input-error-message hidden"></span>
+                </div>
+                <div class="sign-up-right">
+                  <label for="sign-up-surname"> Surname </label>
+                  <input
+                    id="sign-up-surname"
+                    class="personal-data-input"
+                    placeholder="Enter surame"
+                    type="text"
+                  />
+                  <span class="input-error-message hidden"></span>
+
+                  <label for="sign-up-birth"> Birth </label>
+                  <input
+                    id="sign-up-birth"
+                    class="personal-data-input"
+                    placeholder="Enter birth"
+                    type="text"
+                  />
+                  <span class="input-error-message hidden"></span>
+
+                  <label for="sign-up-adress"> Address </label>
+                  <input
+                    id="sign-up-adress"
+                    class="personal-data-input"
+                    placeholder="Enter address"
+                    type="text"
+                  />
+                  <span class="input-error-message hidden"></span>
+
+                  <label for="sign-up-code"> Postal Code </label>
+                  <input
+                    id="sign-up-code"
+                    class="personal-data-input"
+                    placeholder="Enter postal code"
+                    type="text"
+                  />
+                  <span class="input-error-message hidden"></span>
+
+                  <label for="sign-up-membership"> Membership </label>
+                  <select id="sign-up-membership" class="personal-data-input">
+                    <option value="choose membership" selected disabled hidden>
+                      Choose a membership
+                    </option>
+                    <option value="only">Only Classes</option>
+                    <option value="classic">Classic</option>
+                    <option value="black">Black</option>
+                  </select>
+                  <span class="input-error-message hidden"></span>
+
+                  <label for="sign-up-repeatpass"> Repeat password </label>
+                  <input
+                    id="sign-up-repeatpass"
+                    class="personal-data-input"
+                    placeholder="Enter repeated password"
+                    type="password"
+                  />
+                  <span class="input-error-message hidden"></span>
+                </div>
+              </div>
+              <div class="sign-up-btn">
                 <input
-                  class="personal-data-input"
-                  type="text"
-                  id="first-name"
-                  name="first-name"
-                  placeholder="Enter name"
-                />
-                <label for="last-name"> Last name </label>
-                <input
-                  class="personal-data-input"
-                  type="text"
-                  id="last-name"
-                  name="last-name"
-                  placeholder="Enter last name"
-                />
-                <label for="Email"> Email adress </label>
-                <input
-                  class="personal-data-input"
-                  type="text"
-                  id="Email"
-                  name="Email"
-                  placeholder="Enter email"
-                />
-                <input
-                  class="submit-input-desktop"
+                  class="submit-input-sign-up"
                   type="submit"
                   value="Submit"
                 />
               </div>
-              <div class="right-get">
-                <label for="Contact"> Contact reason </label>
-                <select id="Contact" name="Contact">
-                  <option value="" disabled selected hidden>
-                    Choose contact reason
-                  </option>
-                  <option value="reason1">reason 1</option>
-                  <option value="reason2">reason 2</option>
-                  <option value="reason3">reason 3</option>
-                </select>
-                <label for="Message"> Message </label>
-                <textarea
-                  placeholder="Enter you message"
-                  name="description"
-                  id="Message"
-                  name="Message"
-                >
-                </textarea>
-                <input class="submit-input-mob" type="submit" value="Submit" />
-              </div>
             </form>
           </section>
         </main>
-     <!--  <footer>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/MegaRocket">
-            <img src="../../assets/imgs/linkedin.svg" alt="LinkedIn logo" />
-          </a>
-          <a href="https://www.facebook.com/MegaRocket">
-            <img src="../../assets/imgs/facebook.svg" alt="Facebook logo" />
-          </a>
-          <a href="https://www.instagram.com/MegaRocket">
-            <img src="../../assets/imgs/instagram.svg" alt="Instagram logo" />
-          </a>
-        </div>
-        <span> Copyright © 2022 Radium Rocket. All rights reserved. </span>
-      </footer> -->
       </div>
     </div>
   </body>
