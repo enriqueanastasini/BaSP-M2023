@@ -11,22 +11,27 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/aside.css" />
-    <link rel="stylesheet" href="css/contain.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/aside.css" />
+    <link rel="stylesheet" href="../css/contain.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
 
   <body>
     <header>
       <img
         class="logo-left"
-        src="../assets/imgs/logo-mega-rocket.png"
+        src="../../assets/imgs/logo-mega-rocket.png"
         alt="Logo MegaRocket"
       />
-      <img class="burguer-menu" src="../assets/imgs/burguer.svg" alt="Menu" />
+      <img
+        class="burguer-menu"
+        src="../../assets/imgs/burguer.svg"
+        alt="Menu"
+      />
     </header>
     <div class="general-container">
       <aside>
@@ -34,19 +39,19 @@
           <ul class="list-aside">
             <li>
               <a href="#" class="btn-aside">
-                <img src="../assets/imgs/home.svg" alt="Home" />
+                <img src="../../assets/imgs/home.svg" alt="Home" />
                 Home
               </a>
             </li>
             <li>
               <a href="#" class="btn-aside">
-                <img src="../assets/imgs/sign-up.svg" alt="Sign Up" />
+                <img src="../../assets/imgs/sign-up.svg" alt="Sign Up" />
                 Sign Up
               </a>
             </li>
             <li>
               <a href="#" class="btn-aside">
-                <img src="../assets/imgs/sign-in.svg" alt="Sign In" />
+                <img src="../../assets/imgs/sign-in.svg" alt="Sign In" />
                 Sign in
               </a>
             </li>
@@ -57,16 +62,16 @@
           <ul class="list-aside">
             <li class="list-aside-contact">
               <a href="mailto:information@untitled.tld" class="mail-underline">
-                <img src="../assets/imgs/mail.svg" alt="Mail" />
+                <img src="../../assets/imgs/mail.svg" alt="Mail" />
                 information@untitled.tld
               </a>
             </li>
             <li class="list-aside-contact">
-              <img src="../assets/imgs/phone.svg" alt="Contact" />
+              <img src="../../assets/imgs/phone.svg" alt="Contact" />
               (000)000-0000
             </li>
             <li class="list-aside-contact">
-              <img src="../assets/imgs/ubication.svg" alt="Location" />
+              <img src="../../assets/imgs/ubication.svg" alt="Location" />
               1234 Somewhere Road #8254 Nashville, TN
             </li>
           </ul>
@@ -74,77 +79,40 @@
       </aside>
       <div class="content-container">
         <main class="main-pos">
-          <section class="get-touch-section">
-            <h2>Get in touch</h2>
+          <section class="login-section">
+            <h2>Login</h2>
             <form action="form_submit.php" method="post">
-              <div class="left-get">
-                <label for="first-name"> First name </label>
+              <div class="login-first">
+                <label for="username"> Username </label>
                 <input
                   class="personal-data-input"
                   type="text"
-                  id="first-name"
-                  name="first-name"
-                  placeholder="Enter name"
+                  id="username"
+                  name="username"
+                  placeholder="Enter username"
                 />
-                <label for="last-name"> Last name </label>
+                <label for="Password"> Password </label>
                 <input
                   class="personal-data-input"
-                  type="text"
-                  id="last-name"
-                  name="last-name"
-                  placeholder="Enter last name"
+                  type="password"
+                  id="Password"
+                  name="Password"
+                  placeholder="Enter password"
                 />
-                <label for="Email"> Email adress </label>
+              </div>
+              <div class="login-second">
+                <a href="recover-password.html" class="mail-underline">
+                  Forgot your Password?
+                </a>
                 <input
-                  class="personal-data-input"
-                  type="text"
-                  id="Email"
-                  name="Email"
-                  placeholder="Enter email"
-                />
-                <input
-                  class="submit-input-desktop"
+                  class="submit-input-login"
                   type="submit"
                   value="Submit"
                 />
               </div>
-              <div class="right-get">
-                <label for="Contact"> Contact reason </label>
-                <select id="Contact" name="Contact">
-                  <option value="" disabled selected hidden>
-                    Choose contact reason
-                  </option>
-                  <option value="reason1">reason 1</option>
-                  <option value="reason2">reason 2</option>
-                  <option value="reason3">reason 3</option>
-                </select>
-                <label for="Message"> Message </label>
-                <textarea
-                  placeholder="Enter you message"
-                  name="description"
-                  id="Message"
-                  name="Message"
-                >
-                </textarea>
-                <input class="submit-input-mob" type="submit" value="Submit" />
-              </div>
             </form>
           </section>
         </main>
-      <footer>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/MegaRocket">
-            <img src="../assets/imgs/linkedin.svg" alt="LinkedIn logo" />
-          </a>
-          <a href="https://www.facebook.com/MegaRocket">
-            <img src="../assets/imgs/facebook.svg" alt="Facebook logo" />
-          </a>
-          <a href="https://www.instagram.com/MegaRocket">
-            <img src="../assets/imgs/instagram.svg" alt="Instagram logo" />
-          </a>
-        </div>
-        <span> Copyright © 2022 Radium Rocket. All rights reserved. </span>
-      </footer>
       </div>
     </div>
   </body>
