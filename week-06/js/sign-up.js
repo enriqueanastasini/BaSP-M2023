@@ -85,10 +85,8 @@ const validateDNI = () => {
 
   if (!dniValue) {
     dniError = "DNI is required";
-  } else if (dniValue.length <= 7 && !/^[0-9]*$/.test(dniValue)) {
-    dniError = "DNI is too short. DNI contains characters that are not numbers";
-  } else if (dniValue.length <= 7) {
-    dniError = "DNI is too short";
+  } else if (dniValue.length < 7 || dniValue.length > 8) {
+    dniError = "DNI contains between 7 to 8 numbers";
   } else {
     for (var i = 0; i < dniValue.length; i++) {
       var char = dniValue.charAt(i);
@@ -135,7 +133,7 @@ const validatePhone = () => {
     for (var i = 0; i < phoneValue.length; i++) {
       var char = phoneValue.charAt(i);
       if (!(char >= "0" && char <= "9")) {
-        phoneError = "DNI contains characters that are not numbers";
+        phoneError = "Phone contains characters that are not numbers";
         break;
       }
     }
