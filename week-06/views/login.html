@@ -83,43 +83,51 @@
             <h2>Login</h2>
             <form action="form_submit.php" method="post">
               <div class="login-first">
-                <label for="username"> Username </label>
-                <input
-                  class="personal-data-input"
-                  type="text"
-                  id="username"
-                  name="username"
-                  placeholder="Enter username"
-                />
-                <label for="Password"> Password </label>
-                <input
-                  class="personal-data-input"
-                  type="password"
-                  id="Password"
-                  name="Password"
-                  placeholder="Enter password"
-                />
+                <div class="form-field">
+                  <label for="login-username" class="form-label"> Username </label>
+                  <input
+                    id="login-username"
+                    class="personal-data-input"
+                    placeholder="Enter username"
+                    type="text"
+                  />
+                  <span class="input-error-message hidden"></span>
+                </div>
+                <div class="form-field">
+                  <label for="login-pass" class="form-label"> Password </label>
+                  <input
+                    id="login-pass"
+                    class="personal-data-input"
+                    placeholder="Enter password"
+                    type="password"
+                  />
+                  <span class="input-error-message hidden"></span>
+                </div>
                 <div class="checkbox">
-                  <input id="remember-checkbox" type="checkbox"></input>
+                  <input id="remember-checkbox" type="checkbox" />
                   <label for="remember-checkbox" class="form-label">
-                      Remember Me
+                    Remember Me
                   </label>
-              </div>
+                </div>
               </div>
               <div class="login-second">
                 <a href="recover-password.html" class="mail-underline">
                   Forgot your Password?
                 </a>
-                <input
-                  class="submit-input-login"
-                  type="submit"
-                  value="Submit"
-                />
+                <div class="login-btn">
+                  <input
+                    id="submit-login-btn"
+                    class="submit-input-login"
+                    type="submit"
+                    value="Submit"
+                  />
+                </div>
               </div>
             </form>
           </section>
         </main>
       </div>
     </div>
+    <script src="../js/login.js"></script>
   </body>
 </html>

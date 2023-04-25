@@ -77,3 +77,25 @@
     height: 1em;
     margin-right: 10px;
 }
+
+.input-error-message {
+    font-size: 14px;
+    color: red;
+}
+
+.input-error {
+    border: 1px solid red;
+    color: red;
+}
+
+.input-error::placeholder {
+    color: red;
+}
+
+.label-error {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
