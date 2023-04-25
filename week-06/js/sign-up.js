@@ -1,4 +1,4 @@
-/* NAME */
+/* START */
 
 let hasError = false; // It will validate the form before the submit
 
@@ -26,6 +26,8 @@ const clearError = (input) => {
   removeError(label, input, span);
 };
 
+/* NAME */
+
 // Define validation functions
 const validateName = () => {
   let inputGroup = nameInput.parentElement;
@@ -39,8 +41,18 @@ const validateName = () => {
     nameError = "Name is required";
   } else if (nameValue.length <= 2) {
     nameError = "Name is too short";
-  } else if (!/^[a-zA-Z ]*$/.test(nameValue)) {
-    nameError = "Name contains invalid characters";
+  } else {
+    for (var i = 0; i < nameValue.length; i++) {
+      var char = nameValue.charAt(i);
+      if (
+        !(char >= "A" && char <= "Z") &&
+        !(char >= "a" && char <= "z") &&
+        !(char == " ")
+      ) {
+        nameError = "Name contains invalid characters";
+        break;
+      }
+    }
   }
 
   if (nameError) {
@@ -77,8 +89,14 @@ const validateDNI = () => {
     dniError = "DNI is too short. DNI contains characters that are not numbers";
   } else if (dniValue.length <= 7) {
     dniError = "DNI is too short";
-  } else if (!/^[0-9]*$/.test(dniValue)) {
-    dniError = "DNI contains characters that are not numbers";
+  } else {
+    for (var i = 0; i < dniValue.length; i++) {
+      var char = dniValue.charAt(i);
+      if (!(char >= "0" && char <= "9")) {
+        dniError = "DNI contains characters that are not numbers";
+        break;
+      }
+    }
   }
 
   if (dniError) {
@@ -111,8 +129,16 @@ const validatePhone = () => {
 
   if (!phoneValue) {
     phoneError = "Phone number is required";
-  } else if (!/^\+?\d{13,}$/.test(phoneValue) || phoneValue.length > 14) {
-    phoneError = "Phone number is invalid, it must contain 13 numbers";
+  } else if (phoneValue.length !== 10) {
+    phoneError = "Phone number is invalid, it must contain 10 numbers";
+  } else {
+    for (var i = 0; i < phoneValue.length; i++) {
+      var char = phoneValue.charAt(i);
+      if (!(char >= "0" && char <= "9")) {
+        phoneError = "DNI contains characters that are not numbers";
+        break;
+      }
+    }
   }
 
   if (phoneError) {
@@ -147,8 +173,18 @@ const validateCity = () => {
     cityError = "City is required";
   } else if (cityValue.length <= 2) {
     cityError = "City is too short";
-  } else if (!/^[a-zA-Z ]*$/.test(cityValue)) {
-    cityError = "City contains invalid characters";
+  } else {
+    for (var i = 0; i < cityValue.length; i++) {
+      var char = cityValue.charAt(i);
+      if (
+        !(char >= "A" && char <= "Z") &&
+        !(char >= "a" && char <= "z") &&
+        !(char == " ")
+      ) {
+        cityError = "City contains invalid characters";
+        break;
+      }
+    }
   }
 
   if (cityError) {
@@ -269,8 +305,18 @@ const validateSurname = () => {
     surnameError = "surname is required";
   } else if (surnameValue.length <= 2) {
     surnameError = "surname is too short";
-  } else if (!/^[a-zA-Z ]*$/.test(surnameValue)) {
-    surnameError = "surname contains invalid characters";
+  } else {
+    for (var i = 0; i < surnameValue.length; i++) {
+      var char = surnameValue.charAt(i);
+      if (
+        !(char >= "A" && char <= "Z") &&
+        !(char >= "a" && char <= "z") &&
+        !(char == " ")
+      ) {
+        surnameError = "Surname contains invalid characters";
+        break;
+      }
+    }
   }
 
   if (surnameError) {
