@@ -60,3 +60,20 @@
     background-color: #AACE9B;
     width: 30%;
 }
+
+.checkbox {
+    display: flex;
+}
+
+.checkbox label {
+    width: 50%;
+}
+
+#remember-checkbox[type="checkbox"] {
+    border-radius: 4px;
+    border: 1px solid #373867;
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    margin-right: 10px;
+}

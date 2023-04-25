@@ -20,6 +20,9 @@ Develop the style with CSS. Responsive using breakpoints, flexible layout. Mobil
 ## Week 05
 Practicing JavaScript ES5. Including exercises of: (Variables and operators - Strings - Arrays - If-Else - For - Functions).
 
+## Week 06
+Implementation of JavaScript ES5 for validation. Validation of Login and Sign Up.
+
 
 ## Installation
 To use the Mega Rocket, simply open the index.html file in your web browser. There is no need to install any software or libraries.
