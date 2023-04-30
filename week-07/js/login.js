@@ -57,7 +57,6 @@ const validateUserEmail = () => {
 userEmailInput.addEventListener("blur", validateUserEmail);
 userEmailInput.addEventListener("focus", () => clearError(userEmailInput));
 
-
 /* PASSWORD */
 
 // Select the loginPassword input element
@@ -108,7 +107,9 @@ const validateLoginPassword = () => {
 
 // Add event listeners to loginPassword input field
 loginPasswordInput.addEventListener("blur", validateLoginPassword);
-loginPasswordInput.addEventListener("focus", () => clearError(loginPasswordInput));
+loginPasswordInput.addEventListener("focus", () =>
+  clearError(loginPasswordInput)
+);
 
 /* SUBMIT BUTTON */
 
@@ -119,14 +120,14 @@ submitButton.form.addEventListener("submit", (event) => {
   if (hasError) {
     alert("Please fix the errors in the form");
   } else {
-    fetch('https://api-rest-server.vercel.app/login?email=' + userEmailInput.value + '&password=' + loginPasswordInput.value)
-      .then(response => {
-       return response.json();
+    fetch("https://api-rest-server.vercel.app/login?email=" + userEmailInput.value + "&password=" + loginPasswordInput.value)
+      .then((response) => {
+        return response.json();
       })
-      .then(data => {
+      .then((data) => {
         alert(data.msg);
       })
-      .catch(error => {
+      .catch((error) => {
         alert("Username or Password are wrong");
       });
   }
