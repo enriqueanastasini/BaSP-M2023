@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 73px;
+    background-color : #373867;
+}
+
+.logo-left {
+    margin-left: 10px;
+}
+
+.burguer-menu {
+    margin-right: 24px;
+}
+
+@media (min-width: 1024px){
+    header {
+        background-color : #373867;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 98px;
+    }
+    .burguer-menu{
+        visibility: hidden;
+    }
+}

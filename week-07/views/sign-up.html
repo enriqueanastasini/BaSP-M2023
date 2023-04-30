@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MegaRocket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/aside.css" />
+    <link rel="stylesheet" href="../css/contain.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo-left"
+        src="../../assets/imgs/logo-mega-rocket.png"
+        alt="Logo MegaRocket"
+      />
+      <img
+        class="burguer-menu"
+        src="../../assets/imgs/burguer.svg"
+        alt="Menu"
+      />
+    </header>
+    <div class="general-container">
+      <aside>
+        <nav>
+          <ul class="list-aside">
+            <li>
+              <a href="index.html" class="btn-aside">
+                <img src="../../assets/imgs/home.svg" alt="Home" />
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="sign-up.html" class="btn-aside">
+                <img src="../../assets/imgs/sign-up.svg" alt="Sign Up" />
+                Sign Up
+              </a>
+            </li>
+            <li>
+              <a href="login.html" class="btn-aside">
+                <img src="../../assets/imgs/sign-in.svg" alt="Sign In" />
+                Sign in
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact-information-container">
+          <h2 class="contact-information">Contact information</h2>
+          <ul class="list-aside">
+            <li class="list-aside-contact">
+              <a href="mailto:information@untitled.tld" class="mail-underline">
+                <img src="../../assets/imgs/mail.svg" alt="Mail" />
+                information@untitled.tld
+              </a>
+            </li>
+            <li class="list-aside-contact">
+              <img src="../../assets/imgs/phone.svg" alt="Contact" />
+              (000)000-0000
+            </li>
+            <li class="list-aside-contact">
+              <img src="../../assets/imgs/ubication.svg" alt="Location" />
+              1234 Somewhere Road #8254 Nashville, TN
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="content-container">
+        <main class="main-pos">
+          <section class="sign-up-section">
+            <h2>Sign Up</h2>
+            <form id="sign-up-form" action="form_submit.php" method="post">
+              <div class="sign-up-inputs">
+                <div class="sign-up-left">
+                  <div class="form-field">
+                    <label for="sign-up-name" class="form-label"> Name </label>
+                    <input
+                      id="sign-up-name"
+                      class="personal-data-input"
+                      placeholder="Enter Name"
+                      type="text"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="sign-up-dni" class="form-label"> DNI </label>
+                    <input
+                      id="sign-up-dni"
+                      class="personal-data-input"
+                      placeholder="Enter DNI"
+                      type="text"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="sign-up-phone" class="form-label"> Phone </label>
+                    <input
+                      id="sign-up-phone"
+                      class="personal-data-input"
+                      placeholder="Enter phone number"
+                      type="text"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="sign-up-city" class="form-label"> City </label>
+                    <input
+                      id="sign-up-city"
+                      class="personal-data-input"
+                      placeholder="Enter city"
+                      type="text"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="sign-up-email" class="form-label"> Email </label>
+                    <input
+                      id="sign-up-email"
+                      class="personal-data-input"
+                      placeholder="Enter email"
+                      type="text"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="sign-up-pass" class="form-label"> Password </label>
+                    <input
+                      id="sign-up-pass"
+                      class="personal-data-input"
+                      placeholder="Enter password"
+                      type="password"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                </div>
+                <div class="sign-up-right">
+                  <div class="form-field">
+                    <label for="sign-up-surname" class="form-label"> Surname </label>
+                    <input
+                      id="sign-up-surname"
+                      class="personal-data-input"
+                      placeholder="Enter surame"
+                      type="text"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="sign-up-birth" class="form-label"> Birth </label>
+                    <input
+                      id="sign-up-birth"
+                      class="personal-data-input"
+                      placeholder="Enter birth"
+                      type="date"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="sign-up-adress" class="form-label"> Address </label>
+                    <input
+                      id="sign-up-adress"
+                      class="personal-data-input"
+                      placeholder="Enter address"
+                      type="text"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="sign-up-code" class="form-label"> Postal Code </label>
+                    <input
+                      id="sign-up-code"
+                      class="personal-data-input"
+                      placeholder="Enter postal code"
+                      type="text"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="sign-up-membership" class="form-label"> Membership </label>
+                    <select id="sign-up-membership" class="personal-data-input">
+                      <option
+                        value="choose membership"
+                        selected
+                        disabled
+                        hidden
+                      >
+                        Choose a membership
+                      </option>
+                      <option value="only">Only Classes</option>
+                      <option value="classic">Classic</option>
+                      <option value="black">Black</option>
+                    </select>
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="sign-up-repeatpass" class="form-label"> Repeat password </label>
+                    <input
+                      id="sign-up-repeatpass"
+                      class="personal-data-input"
+                      placeholder="Enter repeated password"
+                      type="password"
+                    />
+                    <span class="input-error-message hidden"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="sign-up-btn">
+                <input
+                  id="submit-sign-up-btn"
+                  class="submit-input-sign-up"
+                  type="submit"
+                  value="Submit"
+                />
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sign-up.js"></script>
+  </body>
+</html>

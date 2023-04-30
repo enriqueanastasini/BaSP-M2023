@@ -1,0 +1,27 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 72px;
+    background-color: #AACE9B;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.social-media {
+    margin-top: 8px;
+}
+
+.social-media img {
+    margin: 0 10px;
+}
+
+@media (min-width: 1024px){
+    footer {
+    width: 100%;
+    /* margin-left: 30%; */
+    }
+}
