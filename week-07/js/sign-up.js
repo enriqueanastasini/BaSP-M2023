@@ -525,7 +525,7 @@ submitButton.form.addEventListener("submit", (event) => {
     let dniValue = form.querySelector("#sign-up-dni").value;
     let birthValue = form.querySelector("#sign-up-birth").value;
     let birthValueSplit = birthValue.split("-");
-    let formattedBirthValue = birthValueSplit[1] + "-" + birthValueSplit[2] + "-" + birthValueSplit[0].substring(2);
+    let formattedBirthValue = birthValueSplit[1] + "/" + birthValueSplit[2] + "/" + birthValueSplit[0];
     let phoneValue = form.querySelector("#sign-up-phone").value;
     let adressValue = form.querySelector("#sign-up-adress").value;
     let cityValue = form.querySelector("#sign-up-city").value;
@@ -608,9 +608,5 @@ window.onload = () => {
   }
   if (localStorage.getItem('email')) {
     emailValue.value = localStorage.getItem('email');
-  }
-  if (localStorage.getItem('password')) {
-    passwordValue.value = localStorage.getItem('password');
-    repeatPass.value = localStorage.getItem('password');
   }
   };
