@@ -514,9 +514,103 @@ repeatPasswordInput.addEventListener("focus", () =>
 
 const submitButton = document.getElementById("submit-sign-up-btn");
 
-submitButton.addEventListener("click", (event) => {
+submitButton.form.addEventListener("submit", (event) => {
+  event.preventDefault();
   if (hasError) {
-    event.preventDefault();
     alert("Please fix the errors in the form");
+  } else {
+    const form = submitButton.form;
+    let nameValue = form.querySelector("#sign-up-name").value;
+    let surnameValue = form.querySelector("#sign-up-surname").value;
+    let dniValue = form.querySelector("#sign-up-dni").value;
+    let birthValue = form.querySelector("#sign-up-birth").value;
+    let birthValueSplit = birthValue.split("-");
+    let formattedBirthValue = birthValueSplit[1] + "-" + birthValueSplit[2] + "-" + birthValueSplit[0].substring(2);
+    let phoneValue = form.querySelector("#sign-up-phone").value;
+    let addressValue = form.querySelector("#sign-up-address").value;
+    let cityValue = form.querySelector("#sign-up-city").value;
+    let codeValue = form.querySelector("#sign-up-code").value;
+    let emailValue = form.querySelector("#sign-up-email").value;
+    let passwordValue = form.querySelector("#sign-up-pass").value;
+
+    fetch(
+      "https://api-rest-server.vercel.app/signup?name=" + nameValue + "&lastName=" + surnameValue + "&dni=" + dniValue + "&dob=" +
+      formattedBirthValue + "&phone=" + phoneValue + "&address=" + addressValue + "&city=" + cityValue + "&zip=" + codeValue +
+        "&email=" + emailValue + "&password=" + passwordValue
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);  /* sacar esto despues */
+        if (data.success) {
+          localStorage.setItem("name", nameValue);
+          localStorage.setItem("surname", surnameValue);
+          localStorage.setItem("dni", dniValue);
+          localStorage.setItem("dob", birthValue);
+          localStorage.setItem("phone", phoneValue);
+          localStorage.setItem("address", addressValue);
+          localStorage.setItem("city", cityValue);
+          localStorage.setItem("zip", codeValue);
+          localStorage.setItem("email", emailValue);
+          localStorage.setItem("password", passwordValue);
+          alert(data.msg);
+        } else {
+          let errorMsg = "There was an error submitting the form:\n\n";
+          data.errors.forEach((error) => {
+            errorMsg += `${error.msg}\n`;
+          });
+          alert(errorMsg);
+          throw new Error(data.msg);
+        }
+      })
+      .catch((error) => {
+        alert(error);
+      });
   }
 });
+
+window.onload = () => {
+  let nameValue = document.getElementById("sign-up-name");
+  let surnameValue = document.getElementById("sign-up-surname");
+  let dniValue = document.getElementById("sign-up-dni");
+  let birthValue = document.getElementById("sign-up-birth");
+  let phoneValue = document.getElementById("sign-up-phone");
+  let addressValue = document.getElementById("sign-up-address");
+  let cityValue = document.getElementById("sign-up-city");
+  let codeValue = document.getElementById("sign-up-code");
+  let emailValue = document.getElementById("sign-up-email");
+
+
+  if (localStorage.getItem('name')) {
+    nameValue.value = localStorage.getItem('name');
+  }
+  if (localStorage.getItem('surname')) {
+    surnameValue.value = localStorage.getItem('surname');
+  }
+  if (localStorage.getItem('dni')) {
+    dniValue.value = parseInt(localStorage.getItem('dni'));
+  }
+  if (localStorage.getItem('dob')) {
+    birthValue.value = localStorage.getItem('dob');
+  }
+  if (localStorage.getItem('phone')) {
+    phoneValue.value = parseInt(localStorage.getItem('phone'));
+  }
+  if (localStorage.getItem('address')) {
+    addressValue.value = localStorage.getItem('address');
+  }
+  if (localStorage.getItem('city')) {
+    cityValue.value = localStorage.getItem('city');
+  }
+  if (localStorage.getItem('zip')) {
+    codeValue.value = parseInt(localStorage.getItem('zip'));
+  }
+  if (localStorage.getItem('email')) {
+    emailValue.value = localStorage.getItem('email');
+  }
+  if (localStorage.getItem('password')) {
+    passwordValue.value = localStorage.getItem('password');
+    repeatPass.value = localStorage.getItem('password');
+  }
+  };
