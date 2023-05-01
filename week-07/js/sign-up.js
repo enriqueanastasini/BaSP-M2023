@@ -527,7 +527,7 @@ submitButton.form.addEventListener("submit", (event) => {
     let birthValueSplit = birthValue.split("-");
     let formattedBirthValue = birthValueSplit[1] + "-" + birthValueSplit[2] + "-" + birthValueSplit[0].substring(2);
     let phoneValue = form.querySelector("#sign-up-phone").value;
-    let addressValue = form.querySelector("#sign-up-address").value;
+    let adressValue = form.querySelector("#sign-up-adress").value;
     let cityValue = form.querySelector("#sign-up-city").value;
     let codeValue = form.querySelector("#sign-up-code").value;
     let emailValue = form.querySelector("#sign-up-email").value;
@@ -535,7 +535,7 @@ submitButton.form.addEventListener("submit", (event) => {
 
     fetch(
       "https://api-rest-server.vercel.app/signup?name=" + nameValue + "&lastName=" + surnameValue + "&dni=" + dniValue + "&dob=" +
-      formattedBirthValue + "&phone=" + phoneValue + "&address=" + addressValue + "&city=" + cityValue + "&zip=" + codeValue +
+      formattedBirthValue + "&phone=" + phoneValue + "&address=" + adressValue + "&city=" + cityValue + "&zip=" + codeValue +
         "&email=" + emailValue + "&password=" + passwordValue
     )
       .then((response) => {
@@ -549,7 +549,7 @@ submitButton.form.addEventListener("submit", (event) => {
           localStorage.setItem("dni", dniValue);
           localStorage.setItem("dob", birthValue);
           localStorage.setItem("phone", phoneValue);
-          localStorage.setItem("address", addressValue);
+          localStorage.setItem("adress", adressValue);
           localStorage.setItem("city", cityValue);
           localStorage.setItem("zip", codeValue);
           localStorage.setItem("email", emailValue);
@@ -576,7 +576,7 @@ window.onload = () => {
   let dniValue = document.getElementById("sign-up-dni");
   let birthValue = document.getElementById("sign-up-birth");
   let phoneValue = document.getElementById("sign-up-phone");
-  let addressValue = document.getElementById("sign-up-address");
+  let adressValue = document.getElementById("sign-up-adress");
   let cityValue = document.getElementById("sign-up-city");
   let codeValue = document.getElementById("sign-up-code");
   let emailValue = document.getElementById("sign-up-email");
@@ -597,8 +597,8 @@ window.onload = () => {
   if (localStorage.getItem('phone')) {
     phoneValue.value = parseInt(localStorage.getItem('phone'));
   }
-  if (localStorage.getItem('address')) {
-    addressValue.value = localStorage.getItem('address');
+  if (localStorage.getItem('adress')) {
+    adressValue.value = localStorage.getItem('adress');
   }
   if (localStorage.getItem('city')) {
     cityValue.value = localStorage.getItem('city');
